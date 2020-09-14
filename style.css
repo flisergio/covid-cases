@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    min-height: 100%;
+}
+
+.title_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.header_main {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5vw;
+}
+
+.p_author {
+    margin: 0;
+    margin-top: 5px;    
+    padding: 0;
+    font-size: 1vw;
+}
+
+.p_author span {
+    padding-left: 5px;
+    margin-left: 5px;
+    opacity: .5;
+    border-left: 1px solid #000;
+}
+
+.chart_container {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart_container.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.chart_container.absolute_top {
+    position: absolute;
+    top: 500vh;
+    left: 0;
+}
+
+.chart_inside_container {
+    width: 100%;
+}
+
+.chart {
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, .1);
+}
+
+.y-scale {
+    font-size: .8vw;
+}
+
+.x-scale {
+    font-size: .8vw;
+}
+
+rect {
+    transition: .5s;
+}
+
+rect:hover {
+    opacity: 1;
+}
+
+rect ~ text {
+    opacity: 0;
+    transition: .5s;
+}
+
+rect:first-child:hover ~ text:nth-child(12) {
+    opacity: 1;
+}
+
+rect:nth-child(2):hover ~ text:nth-child(13) {
+    opacity: 1;
+}
+
+rect:nth-child(3):hover ~ text:nth-child(14) {
+    opacity: 1;
+}
+
+rect:nth-child(4):hover ~ text:nth-child(15) {
+    opacity: 1;
+}
+
+rect:nth-child(5):hover ~ text:nth-child(16) {
+    opacity: 1;
+}
+
+rect:nth-child(6):hover ~ text:nth-child(17) {
+    opacity: 1;
+}
+
+rect:nth-child(7):hover ~ text:nth-child(18) {
+    opacity: 1;
+}
+
+rect:nth-child(8):hover ~ text:nth-child(19) {
+    opacity: 1;
+}
+
+rect:nth-child(9):hover ~ text:nth-child(20) {
+    opacity: 1;
+}
+
+rect:nth-child(10):hover ~ text:nth-child(21) {
+    opacity: 1;
+}
+
+rect:nth-child(11):hover ~ text:nth-child(22) {
+    opacity: 1;
+}
+
+.description_container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+    border-radius: 25px;
+    transition: 1s;
+    opacity: 0;
+}
+
+.description_container p {
+    text-align: center;
+    font-size: 3vw;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom_container {
+    position: absolute;
+    top: 0;
+    padding-top: calc(600vh);
+    z-index: -1;
+}
+
+.bottom_inside_container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom_inside_container p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    font-size: 1vw;
+}
